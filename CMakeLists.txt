@@ -22,11 +22,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 # Set executable name
 set(EXECUTABLE_NAME helloWorld)
 
-# Add the subdirectory for the source folder
-add_subdirectory(src)
-
 # Set any additional compiler flags
 add_compile_options(-Wall -Wextra)
+
+# Add the subdirectory for the source folder
+add_subdirectory(src)
 
 # Set any additional include directories
 # include_directories(inc)

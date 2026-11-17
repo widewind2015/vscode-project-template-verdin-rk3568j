@@ -1,30 +1,27 @@
 {
     "version": "2.0.0",
     "tasks": [
-        /* CMake Build */
         {
             "label": "CMake: Build",
             "type": "cmake",
             "command": "build",
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
+                "panel": "shared"
             },
             "dependsOn": [
                 "CMake: Configure"
             ]
         },
-        /* CMake Configure */
         {
             "label": "CMake: Configure",
             "type": "cmake",
             "command": "configure",
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
+                "panel": "shared"
             }
         },
-        /* Start GDB Server */
         {
             "label": "Start GDB Server",
             "type": "shell",
@@ -36,13 +33,12 @@
             "problemMatcher": [],
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
+                "panel": "shared"
             },
             "dependsOn": [
                 "Kill GDB Server"
             ]
         },
-        /* Kill GDB Server */
         {
             "label": "Kill GDB Server",
             "type": "shell",
@@ -53,11 +49,10 @@
             ],
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
+                "panel": "shared"
             },
-            "problemMatcher": [],
+            "problemMatcher": []
         },
-        /* Deploy Executable */
         {
             "label": "Deploy Executable",
             "type": "shell",
@@ -68,9 +63,16 @@
             ],
             "presentation": {
                 "reveal": "always",
-                "panel": "shared",
+                "panel": "shared"
             },
             "problemMatcher": []
+        },
+        {
+            "type": "cmake",
+            "label": "CMake: clean",
+            "command": "clean",
+            "problemMatcher": [],
+            "detail": "CMake template clean task"
         }
-]
+    ]
 }

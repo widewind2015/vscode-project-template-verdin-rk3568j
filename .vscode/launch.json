@@ -14,15 +14,12 @@
             "externalConsole": true,
             "MIMode": "gdb",
             "targetArchitecture": "${config:customVariables.TARGET_ARCHITECTURE}",
-            "miDebuggerPath": "/usr/bin/gdb-multiarch",
+            "miDebuggerPath": "${config:customVariables.TARGET_GDB_PATH}",
             "miDebuggerServerAddress": "${config:customVariables.TARGET_IP}:${config:customVariables.TARGET_GDB_PORT}",
             "miDebuggerArgs": "",
             "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
+                { "text": "set sysroot ${config:customVariables.TARGET_SYSROOT}" },
+                { "text": "-enable-pretty-printing", "ignoreFailures": true }
             ],
             "postRemoteConnectCommands": [
                 {

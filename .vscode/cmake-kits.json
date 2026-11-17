@@ -1,11 +1,11 @@
 [
     {
-        "name": "Yocto-GCC: GCC 10.3.0 x86_64-poky-linux",
+        "name": "Yocto-GCC: Verdin RK3568J",
         "compilers": {
-            "C": "/opt/poky/3.3.4/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-gcc",
-            "CXX": "/opt/poky/3.3.4/sysroots/x86_64-pokysdk-linux/usr/bin/x86_64-poky-linux/x86_64-poky-linux-g++"
+            "C": "/run/media/ben/ssd/toochain/sdk/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc",
+            "CXX": "/run/media/ben/ssd/toochain/sdk/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++"
         },
-        "environmentSetupScript": "/opt/poky/3.3.4/environment-setup-corei7-64-poky-linux",
-        "toolchainFile": "/opt/poky/3.3.4/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake"
+        "environmentSetupScript": "/run/media/ben/ssd/toochain/sdk/environment-setup-armv8a-poky-linux",
+        "toolchainFile": "/run/media/ben/ssd/toochain/sdk/sysroots/x86_64-pokysdk-linux/usr/share/cmake/OEToolchainConfig.cmake"
     }
 ]
